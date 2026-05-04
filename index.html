@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Style Aura — A modern fashion brand for young India. Discover elegant, trendy, and comfortable fashion with a premium feel." />
+  <title>Style Aura — Feel the Aura of Style</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">Style Aura</div>
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- ========== FLOATING PARTICLES ========== -->
+  <div class="particles"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">Style<span>Aura</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#arrivals">New Arrivals</a></li>
+      <li><a href="#categories">Collections</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div style="display:flex;align-items:center;gap:18px;">
+      <a href="#" class="nav-cart" id="navCart" aria-label="Shopping cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <span class="hero-badge">✦ New Season 2026</span>
+      <h1>Feel the <em>Aura</em> of Style</h1>
+      <p>Discover elegance redefined — curated fashion for the modern Indian soul. Premium comfort meets contemporary charm.</p>
+      <div class="hero-buttons">
+        <a href="#arrivals" class="btn btn-primary">Explore Collection</a>
+        <a href="#about" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEW ARRIVALS ========== -->
+  <section class="section arrivals" id="arrivals">
+    <div class="section-header reveal">
+      <span class="section-tag">Just Dropped</span>
+      <h2 class="section-title">New Arrivals</h2>
+      <p class="section-subtitle">Freshly curated pieces that blend tradition with modern elegance</p>
+    </div>
+
+    <div class="arrivals-grid">
+      <!-- Card 1 -->
+      <div class="arrival-card reveal">
+        <div class="arrival-card-img">
+          <img src="images/product-1.png" alt="Blush Bloom Kurta Set" />
+          <span class="arrival-badge">New</span>
+        </div>
+        <div class="arrival-card-body">
+          <h3>Blush Bloom Kurta Set</h3>
+          <p class="price">₹2,499 <span class="old">₹3,299</span></p>
+          <button class="add-cart-btn">Add to Bag</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="arrival-card reveal">
+        <div class="arrival-card-img">
+          <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&h=800&fit=crop" alt="Lavender Dream Co-ord" />
+          <span class="arrival-badge">Trending</span>
+        </div>
+        <div class="arrival-card-body">
+          <h3>Lavender Dream Co-ord</h3>
+          <p class="price">₹1,899</p>
+          <button class="add-cart-btn">Add to Bag</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="arrival-card reveal">
+        <div class="arrival-card-img">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&h=800&fit=crop" alt="Ivory Elegance Saree" />
+          <span class="arrival-badge">Best Seller</span>
+        </div>
+        <div class="arrival-card-body">
+          <h3>Ivory Elegance Saree</h3>
+          <p class="price">₹3,799 <span class="old">₹4,999</span></p>
+          <button class="add-cart-btn">Add to Bag</button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="arrival-card reveal">
+        <div class="arrival-card-img">
+          <img src="https://images.unsplash.com/photo-1585487000160-6ba892065061?w=600&h=800&fit=crop" alt="Peach Sunset Anarkali" />
+        </div>
+        <div class="arrival-card-body">
+          <h3>Peach Sunset Anarkali</h3>
+          <p class="price">₹2,999</p>
+          <button class="add-cart-btn">Add to Bag</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COLLECTIONS / CATEGORIES ========== -->
+  <section class="section categories" id="categories">
+    <div class="section-header reveal">
+      <span class="section-tag">Curated For You</span>
+      <h2 class="section-title">Shop by Collection</h2>
+      <p class="section-subtitle">Explore handpicked collections designed for every mood and moment</p>
+    </div>
+
+    <div class="categories-grid">
+      <div class="category-card reveal">
+        <img class="category-card-bg" src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=600&h=700&fit=crop" alt="Ethnic Wear" />
+        <div class="category-card-overlay">
+          <h3>Ethnic Wear</h3>
+          <p>42 Pieces</p>
+        </div>
+      </div>
+      <div class="category-card reveal">
+        <img class="category-card-bg" src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=600&h=700&fit=crop" alt="Western Fusion" />
+        <div class="category-card-overlay">
+          <h3>Western Fusion</h3>
+          <p>38 Pieces</p>
+        </div>
+      </div>
+      <div class="category-card reveal">
+        <img class="category-card-bg" src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=700&fit=crop" alt="Casual Chic" />
+        <div class="category-card-overlay">
+          <h3>Casual Chic</h3>
+          <p>55 Pieces</p>
+        </div>
+      </div>
+      <div class="category-card reveal">
+        <img class="category-card-bg" src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&h=700&fit=crop" alt="Accessories" />
+        <div class="category-card-overlay">
+          <h3>Accessories</h3>
+          <p>27 Pieces</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PRODUCTS SLIDER ========== -->
+  <section class="section featured" id="featured">
+    <div class="section-header reveal">
+      <span class="section-tag">Editor's Pick</span>
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">Our most loved styles — handpicked by our design team</p>
+    </div>
+
+    <div class="slider-wrapper reveal">
+      <div class="slider-track">
+        <!-- Slide 1 -->
+        <div class="slider-slide">
+          <div class="slider-slide-img">
+            <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=800&h=600&fit=crop" alt="Rose Gold Lehenga" />
+          </div>
+          <div class="slider-slide-info">
+            <h3>Rose Gold Lehenga</h3>
+            <p>A masterpiece of pastel elegance — perfect for wedding celebrations and festive evenings. Crafted with premium georgette and intricate embroidery.</p>
+            <div class="slider-price">₹8,999</div>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slider-slide">
+          <div class="slider-slide-img">
+            <img src="https://images.unsplash.com/photo-1585487000160-6ba892065061?w=800&h=600&fit=crop" alt="Sage Green Suit Set" />
+          </div>
+          <div class="slider-slide-info">
+            <h3>Sage Green Suit Set</h3>
+            <p>Minimalist charm meets maximum comfort. This breathable cotton suit set is your go-to for brunches, college days, and casual outings.</p>
+            <div class="slider-price">₹2,199</div>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slider-slide">
+          <div class="slider-slide-img">
+            <img src="images/product-1.png" alt="Champagne Silk Saree" />
+          </div>
+          <div class="slider-slide-info">
+            <h3>Champagne Silk Saree</h3>
+            <p>Pure silk draping in soft champagne tones — a timeless piece for the modern Indian woman. Lightweight, elegant, and effortlessly stylish.</p>
+            <div class="slider-price">₹5,499</div>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn slider-prev" aria-label="Previous slide">&#8592;</button>
+        <div class="slider-dots"></div>
+        <button class="slider-btn slider-next" aria-label="Next slide">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section about" id="about">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-left">
+        <img src="images/hero-bg.png" alt="About Style Aura" />
+        <div class="about-img-accent"></div>
+      </div>
+      <div class="about-text reveal-right">
+        <span class="section-tag">Our Story</span>
+        <h2>Where Tradition Meets Modern Elegance</h2>
+        <p>Style Aura was born from a simple idea — that fashion should feel as good as it looks. We create pieces that celebrate the beauty of Indian aesthetics while embracing the comfort and simplicity of modern design.</p>
+        <p>Every collection is thoughtfully curated for the young Indian woman who values quality, elegance, and self-expression. From pastel kurtas to contemporary fusion wear, each piece is a reflection of effortless grace.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <h4>500+</h4>
+            <p>Unique Designs</p>
+          </div>
+          <div class="stat">
+            <h4>50K+</h4>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat">
+            <h4>120+</h4>
+            <p>Cities Served</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact" id="contact">
+    <div class="section-header reveal">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">We'd Love to Hear From You</h2>
+      <p class="section-subtitle">Have a question or want to collaborate? Drop us a message.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <h3>Let's Connect</h3>
+        <p>Whether it's a style query, order support, or a collaboration idea — we're here to help.</p>
+
+        <div class="contact-detail">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <strong>Visit Us</strong>
+            <p>14, Fashion Street, Connaught Place, New Delhi</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <strong>Email Us</strong>
+            <p>hello@styleaura.in</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <strong>Call Us</strong>
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal-right" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us what's on your mind..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Style<span>Aura</span></h3>
+        <p>Crafting elegance for the modern Indian soul. Premium fashion that feels as beautiful as it looks.</p>
+        <div class="footer-social" style="margin-top:18px;">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="#">New Arrivals</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Ethnic Wear</a>
+        <a href="#">Western Fusion</a>
+        <a href="#">Accessories</a>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <a href="#">Size Guide</a>
+        <a href="#">Shipping Info</a>
+        <a href="#">Returns & Exchange</a>
+        <a href="#">FAQs</a>
+        <a href="#">Track Order</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Press</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Style Aura. All rights reserved. Made with ♥ in India.</p>
+    </div>
+  </footer>
+
+  <!-- ========== CART TOAST NOTIFICATION ========== -->
+  <div class="cart-toast" id="cartToast">
+    <span class="toast-icon">🛍️</span>
+    <p><span class="toast-product-name"></span> added to bag!</p>
+  </div>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
