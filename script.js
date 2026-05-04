@@ -228,4 +228,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ---------- Chatbot Popup Toggle ----------
+  const chatbotToggle = document.getElementById('chatbotToggle');
+  const chatbotPopup = document.getElementById('chatbotPopup');
+  const chatbotClose = document.getElementById('chatbotClose');
+
+  chatbotToggle.addEventListener('click', () => {
+    chatbotPopup.classList.toggle('open');
+  });
+  chatbotClose.addEventListener('click', () => {
+    chatbotPopup.classList.remove('open');
+  });
+
 });
